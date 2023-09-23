@@ -17,10 +17,20 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <div class="navbar-header">
-                      <a class="navbar-brand" href="#">Online Course</a>
-                      <a class="navbar-brand" href="{% url 'djangoapp:about' %}">About Us</a>
-                      <a class="navbar-brand" href="{% url 'djangoapp:contact' %}">Contact Us</a>
+                    <a class="navbar-brand" href="#">Dealership Review</a>
                 </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="form-inline" action="" method="post">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Username" name="username" >
+                                <input type="password" class="form-control" placeholder="Password" name="psw" >
+                                <button class="btn btn-primary" type="submit">Login</button>
+                                <button class="btn btn-secondary" href="#">Sign Up</button>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
             </div>
         </nav>
 
